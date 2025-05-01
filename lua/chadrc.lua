@@ -6,12 +6,20 @@
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
+	theme = "github_dark",
+  theme_toggle = { "github_dark", "github_light" },
+  -- transparency = true,
 
-	-- hl_override = {
+	hl_override = {
 	-- 	Comment = { italic = true },
 	-- 	["@comment"] = { italic = true },
-	-- },
+
+    DiffAdd = { fg = 'NONE' },
+    DiffDelete = { fg = 'NONE' },
+    DiffChange = { fg = 'NONE' },
+    DiffText = { fg = 'NONE' },
+    DiffModified = { fg = "NONE" },
+	},
 }
 
 -- M.nvdash = { load_on_startup = true }
