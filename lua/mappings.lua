@@ -15,6 +15,8 @@ map("n", "Y", "yy", { desc = "yank entire line" })
 map("n", "<leader>gd", ":DiffviewOpen\r", { desc= "Open diffview" })
 map("n", "<leader>gD", ":DiffviewClose\r", { desc= "Close diffview" })
 
+map("n", "<leader>ca", ":lua vim.lsp.buf.code_action()\r", { desc = "Lsp code action" })
+
 vim.keymap.set("n", "[d", function()
   vim.diagnostic.goto_prev()
   vim.diagnostic.open_float(nil, { focus = false })

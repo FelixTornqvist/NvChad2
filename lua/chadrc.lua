@@ -24,9 +24,16 @@ M.base46 = {
 
 -- M.nvdash = { load_on_startup = true }
 -- M.ui = {
+--   cmp = {
+--     style = "atom"
+--   }
 --       tabufline = {
 --          lazyload = false
 --      }
---}
+-- }
+
+-- M.lsp = {
+--   signature = true,
+-- }
 
 return M
