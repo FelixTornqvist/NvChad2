@@ -23,6 +23,11 @@ return {
     opts = {
       enhanced_diff_hl = true,
     }
+  },
+
+  {
+    "github/copilot.vim",
+    lazy = false,
   }
 
   -- test new blink
