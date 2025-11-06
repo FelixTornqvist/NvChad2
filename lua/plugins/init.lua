@@ -28,6 +28,11 @@ return {
   {
     "github/copilot.vim",
     lazy = false,
+  },
+
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = require "configs.telescope",
   }
 
   -- test new blink
