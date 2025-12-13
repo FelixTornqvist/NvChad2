@@ -1,5 +1,9 @@
 return {
   {
+    "nvim-tree/nvim-tree.lua",
+    opts = require "configs.nvimtree",
+  },
+  {
     "stevearc/conform.nvim",
     event = 'BufWritePre', -- uncomment for format on save
     opts = require "configs.conform",
@@ -19,6 +23,16 @@ return {
     opts = {
       enhanced_diff_hl = true,
     }
+  },
+
+  {
+    "github/copilot.vim",
+    lazy = false,
+  },
+
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = require "configs.telescope",
   }
 
   -- test new blink
