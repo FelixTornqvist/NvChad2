@@ -33,6 +33,18 @@ map("n", "]q", ":cnext<CR>", { desc = "Next quickfix item" })
 map("n", "[Q", ":cfirst<CR>", { desc = "First quickfix item" })
 map("n", "]Q", ":clast<CR>", { desc = "Last quickfix item" })
 
+-- Close quickfix list
+-- Toggle quickfix list
+map("n", "<leader>q", function()
+  for _, win in ipairs(vim.fn.getwininfo()) do
+    if win.quickfix == 1 then
+      vim.cmd("cclose")
+      return
+    end
+  end
+  vim.cmd("copen")
+end, { desc = "Toggle quickfix list" })
+
 vim.keymap.set('i', '<C-l>', 'copilot#Accept("\\<CR>")', {
     expr = true,
     replace_keycodes = false

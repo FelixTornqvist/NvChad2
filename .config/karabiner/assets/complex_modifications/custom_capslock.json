@@ -1,0 +1,30 @@
+{
+  "title": "Change caps_lock to Esc and f18",
+  "rules": [
+    {
+      "description": "Post Esc if Caps is tapped, f18 if held.",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f18",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "escape"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
