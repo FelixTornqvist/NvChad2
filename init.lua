@@ -10,6 +10,10 @@ if not vim.uv.fs_stat(lazypath) then
 end
 
 vim.opt.rtp:prepend(lazypath)
+vim.opt.equalalways = true
+vim.api.nvim_create_autocmd("VimResized", {
+  command = "wincmd =",
+})
 
 local lazy_config = require "configs.lazy"
 

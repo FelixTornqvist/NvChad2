@@ -6,8 +6,8 @@
 local M = {}
 
 M.base46 = {
-	theme = "github_dark",
-  theme_toggle = { "github_dark", "github_light" },
+	theme = "nightfox",
+  theme_toggle = { "nightfox", "github_light" },
   -- transparency = true,
 
 	hl_override = {
