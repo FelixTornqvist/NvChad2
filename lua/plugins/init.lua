@@ -33,18 +33,20 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     opts = require "configs.telescope",
-  }
+  },
 
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "vim", "lua", "vimdoc",
+        "html", "css",
+        "typescript", "tsx",
+        "c_sharp",
+      },
+    },
+  },
 }
